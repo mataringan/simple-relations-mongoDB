@@ -6,7 +6,6 @@ const apiRouters = require("./src/routes/index");
 const app = express();
 app.use(bodyParser.json());
 app.use("/", apiRouters);
-// Use the cors middleware before defining your routes
 mongoose.set("strictQuery", false);
 mongoose
   .connect(
